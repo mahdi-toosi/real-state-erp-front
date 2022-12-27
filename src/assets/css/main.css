@@ -1,0 +1,156 @@
+@import '@/assets/fonts/vazir';
+@import '@/assets/css/tailwind.css';
+@import '@/assets/css/prime-rtl.css';
+
+*:not(.far):not(.fas):not(.pi) {
+	font-family: Vazir, sans-serif !important;
+}
+
+body {
+	@apply bg-Background_Gray w-screen overflow-x-hidden;
+}
+
+:root {
+	--text-color: #192e59;
+}
+
+/*  * scrollbar styles  */
+*::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: rgb(236 236 236);
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #4d4d4d;
+}
+
+/*  * END scrollbar styles  */
+
+input[type='number']::placeholder,
+input[type='tel']::placeholder {
+	text-align: right !important;
+}
+
+/*  * remove number arrows on input */
+.r_remove_spin_btns::-webkit-outer-spin-button,
+.r_remove_spin_btns::-webkit-inner-spin-button {
+	appearance: none !important;
+	margin: 0 !important;
+}
+
+.r_remove_spin_btns {
+	appearance: textfield !important;
+}
+
+/* *  END remove number arrows on input */
+
+/* * nprogress */
+#nprogress .spinner {
+	display: none;
+}
+
+#nprogress .bar {
+	background: #22dda9;
+}
+
+/* * END nprogress */
+
+/* * fade animation */
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
+}
+
+/* * End fade animation */
+
+/* * generic simple Table */
+.__simple_table {
+	@apply w-full;
+}
+
+.__simple_table th:first-child {
+	@apply rounded-tr-lg;
+}
+
+.__simple_table th:last-child {
+	@apply rounded-tl-lg;
+}
+
+.__simple_table tr:last-child td:first-child {
+	@apply rounded-br-lg;
+}
+
+.__simple_table tr:last-child td:last-child {
+	@apply rounded-bl-lg;
+}
+
+.__simple_table th {
+	background-color: #f3f4f6;
+	color: #495057;
+
+	@apply p-2 text-sm;
+}
+
+.__simple_table td {
+	@apply px-2 py-3 text-right text-sm;
+
+	border-top: 1px solid #e9ecef;
+}
+
+.__simple_table tbody > tr:nth-child(even) {
+	background: #fcfcfc;
+}
+
+/* * END generic simple Table */
+
+/* * START generic datePicker */
+.vpd-controls {
+	@apply flex flex-row-reverse justify-between items-center;
+}
+
+.vpd-container {
+	@apply rounded-md overflow-hidden;
+}
+
+.vpd-next {
+	@apply relative flex flex-col justify-center;
+}
+
+.vpd-controls svg {
+	@apply w-4 text-black mx-auto;
+}
+
+.vpd-input-group label {
+	border-radius: 3px 8px 8px 3px !important;
+}
+
+.vpd-input-group input {
+	@apply p-2 h-9 text-center w-full !important;
+
+	color: #495057 !important;
+	border-radius: 8px 3px 3px 8px !important;
+	border: 1px solid #ced4da;
+	line-height: inherit !important;
+}
+
+.vpd-input-group input::placeholder {
+	@apply text-sm;
+}
+
+.vpd-time .vpd-time-h {
+	width: 48% !important;
+}
+
+/* * END generic datePicker */

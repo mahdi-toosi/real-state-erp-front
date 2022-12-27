@@ -1,0 +1,436 @@
+.p-inputtext,
+.p-multiselect-label,
+.p-dropdown-label,
+.p-dropdown-item,
+.p-multiselect-item {
+	@apply text-sm;
+
+	padding: 0.4375rem;
+}
+
+.p-inputnumber-input::placeholder {
+	text-align: right !important;
+}
+
+/* * generic prime table */
+.p-datatable {
+	@apply rounded-lg overflow-hidden;
+}
+
+.p-datatable .p-datatable-header {
+	@apply p-2 text-sm;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+	@apply p-2 text-sm bg-gray-100;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+	@apply p-2 text-sm;
+}
+
+.p-datatable .p-datatable-tfoot > tr > td {
+	@apply p-2 text-sm;
+}
+
+.p-datatable .p-paginator-bottom {
+	@apply p-2 text-sm;
+
+	direction: ltr !important;
+}
+
+.p-column-title {
+	@apply whitespace-nowrap;
+}
+
+.__th_center .p-column-title,
+.__th_center .p-column-header-content {
+	@apply text-center w-full;
+}
+
+/* * END generic prime table */
+
+/* * generic prime organization chart */
+.p-organizationchart-node-content {
+	@apply rounded-lg;
+}
+
+/* * END generic prime organization chart */
+
+/* * generic prime AutoComplete */
+.p-autocomplete-dd .p-autocomplete-dropdown {
+	border-radius: 3px 0 0 3px !important;
+}
+
+.p-autocomplete-dd .p-autocomplete-input,
+.p-autocomplete-dd .p-autocomplete-multiple-container {
+	@apply rounded-lg !important;
+}
+
+.p-autocomplete.p-autocomplete-dd .p-autocomplete-loader {
+	right: unset !important;
+	left: 1rem;
+}
+
+.p-autocomplete .p-autocomplete-dropdown,
+.p-autocomplete-panel .p-hidden-accessible {
+	display: none;
+}
+
+/* * END generic prime AutoComplete */
+
+/* * generic prime Input */
+.p-inputtext {
+	@apply rounded-lg !important;
+}
+
+/* * END generic prime Input */
+
+/* * generic prime Button */
+.p-disabled {
+	@apply cursor-not-allowed;
+}
+
+button[type='submit'] {
+	min-width: 8rem;
+}
+
+.p-button {
+	@apply rounded-lg text-sm !important;
+
+	padding: 0.4375rem 0.875rem;
+}
+
+.p-button .p-badge {
+	@apply ml-0 mr-2;
+}
+
+.p-button .p-button-icon {
+	@apply text-sm;
+}
+
+.p-buttonset > .p-button {
+	@apply rounded-none !important;
+}
+
+.p-buttonset .p-button:first-child {
+	@apply rounded-r-lg !important;
+}
+
+.p-buttonset .p-button:last-child {
+	@apply rounded-l-lg !important;
+}
+
+.p-button .p-button-icon-left {
+	@apply ml-2 mr-0 !important;
+}
+
+/** prime success button **/
+.p-button.p-button-success,
+.p-buttonset.p-button-success > .p-button,
+.p-splitbutton.p-button-success > .p-button {
+	@apply bg-Primary_color border-Primary_color !important;
+}
+
+.p-button.p-button-success:enabled:focus,
+.p-buttonset.p-button-success > .p-button:enabled:focus,
+.p-splitbutton.p-button-success > .p-button:enabled:focus {
+	box-shadow: #aff0ce 0 0 0 0.2rem !important;
+}
+
+.p-button.p-button-success.p-button-text,
+.p-buttonset.p-button-success > .p-button.p-button-text,
+.p-splitbutton.p-button-success > .p-button.p-button-text {
+	@apply bg-transparent border-transparent !important;
+}
+
+.p-button.p-button-success.p-button-outlined,
+.p-buttonset.p-button-success > .p-button.p-button-outlined,
+.p-splitbutton.p-button-success > .p-button.p-button-outlined {
+	@apply bg-transparent text-Primary_color !important;
+}
+
+/** prime danger button **/
+
+.p-button.p-button-danger,
+.p-buttonset.p-button-danger > .p-button,
+.p-splitbutton.p-button-danger > .p-button {
+	@apply bg-Red1 border-Red1 !important;
+}
+
+.p-button.p-button-danger:enabled:focus,
+.p-buttonset.p-button-danger > .p-button:enabled:focus,
+.p-splitbutton.p-button-danger > .p-button:enabled:focus {
+	box-shadow: #f3a5a5 0 0 0 0.2rem !important;
+}
+
+.p-button.p-button-danger.p-button-text,
+.p-buttonset.p-button-danger > .p-button.p-button-text,
+.p-splitbutton.p-button-danger > .p-button.p-button-text {
+	@apply bg-transparent border-transparent !important;
+}
+
+.p-button.p-button-danger.p-button-outlined,
+.p-buttonset.p-button-danger > .p-button.p-button-outlined,
+.p-splitbutton.p-button-danger > .p-button.p-button-outlined {
+	@apply bg-transparent text-Red1 !important;
+}
+
+/** prime warning button **/
+.p-button.p-button-warning,
+.p-buttonset.p-button-warning > .p-button,
+.p-splitbutton.p-button-warning > .p-button {
+	@apply bg-Orange1 border-Orange1 !important;
+}
+
+.p-button.p-button-warning:enabled:focus,
+.p-buttonset.p-button-warning > .p-button:enabled:focus,
+.p-splitbutton.p-button-warning > .p-button:enabled:focus {
+	box-shadow: #f3d5a5 0 0 0 0.2rem !important;
+}
+
+.p-button.p-button-warning.p-button-text,
+.p-buttonset.p-button-warning > .p-button.p-button-text,
+.p-splitbutton.p-button-warning > .p-button.p-button-text {
+	@apply bg-transparent border-transparent !important;
+}
+
+.p-button.p-button-warning.p-button-outlined,
+.p-buttonset.p-button-warning > .p-button.p-button-outlined,
+.p-splitbutton.p-button-warning > .p-button.p-button-outlined {
+	@apply bg-transparent text-Orange1 !important;
+}
+
+/* * END generic prime Button */
+
+/** prime pale blue button **/
+
+.p-button.p-button-pale-blue,
+.p-buttonset.p-button-pale-blue > .p-button,
+.p-splitbutton.p-button-pale-blue > .p-button {
+	@apply bg-blue-300  border-blue-300 !important;
+}
+
+.p-button.p-button-pale-blue:enabled:focus,
+.p-buttonset.p-button-pale-blue > .p-button:enabled:focus,
+.p-splitbutton.p-button-pale-blue > .p-button:enabled:focus {
+	box-shadow: #70caf7 0 0 0 0.2rem !important;
+}
+
+.p-button.p-button-pale-blue.p-button-text,
+.p-buttonset.p-button-pale-blue > .p-button.p-button-text,
+.p-splitbutton.p-button-pale-blue > .p-button.p-button-text {
+	@apply bg-transparent border-transparent !important;
+}
+
+.p-button.p-button-pale-blue.p-button-outlined,
+.p-buttonset.p-button-pale-blue > .p-button.p-button-outlined,
+.p-splitbutton.p-button-pale-blue > .p-button.p-button-outlined {
+	@apply bg-transparent text-blue-300 !important;
+}
+
+/* * END generic prime Button */
+
+/** prime info button **/
+
+.p-button.p-button-info,
+.p-buttonset.p-button-info > .p-button,
+.p-splitbutton.p-button-info > .p-button {
+	@apply bg-Blue1 border-Blue1 !important;
+}
+
+.p-button.p-button-info:enabled:focus,
+.p-buttonset.p-button-info > .p-button:enabled:focus,
+.p-splitbutton.p-button-pale-info > .p-button:enabled:focus {
+	box-shadow: #31a1ec 0 0 0 0.2rem !important;
+}
+
+.p-button.p-button-info.p-button-text,
+.p-buttonset.p-button-info > .p-button.p-button-text,
+.p-splitbutton.p-button-info > .p-button.p-button-text {
+	@apply bg-transparent border-transparent !important;
+}
+
+.p-button.p-button-info.p-button-outlined,
+.p-buttonset.p-button-info > .p-button.p-button-outlined,
+.p-splitbutton.p-button-info > .p-button.p-button-outlined {
+	@apply bg-transparent text-Blue1 !important;
+}
+
+/* * END generic prime Button */
+
+/* * generic prime chip */
+.p-chip .p-chip-remove-icon {
+	@apply ml-0 mr-2 !important;
+}
+
+/* * END generic prime chip */
+
+/* * generic input switch */
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+	@apply bg-Primary_color !important;
+}
+
+/* * END generic input switch */
+
+/* * generic prime dialog */
+.p-dialog {
+	@apply rounded-2xl overflow-hidden !important;
+}
+
+.p-dialog-title {
+	@apply ml-5;
+}
+
+/* * END generic prime dialog */
+
+/* * generic prime tooltip */
+.p-tooltip-text {
+	font-size: 0.9rem;
+}
+
+/* * END generic prime tooltip */
+
+/* * generic prime tabmenu and tabview */
+.p-tabview-nav .p-tabview-nav-link,
+.p-tabmenu .p-menuitem-link {
+	border-bottom-width: 5px !important;
+}
+
+.p-tabview-nav,
+.p-tabmenu-nav {
+	@apply border-0 relative !important;
+}
+
+.p-tabview-nav::before,
+.p-tabmenu-nav::before {
+	@apply absolute bottom-0 w-full;
+
+	background-color: #dee2e6 !important;
+	height: 3px;
+	content: '';
+}
+
+.p-tabview-nav-link,
+.p-menuitem-link {
+	@apply shadow-none !important;
+}
+
+.p-tabview-nav .p-tabview-title {
+	@apply w-full text-center;
+}
+
+.p-tabmenu .p-tabmenu-nav li.p-highlight .p-menuitem-link,
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+	@apply border-Blue1 text-Blue1 !important;
+}
+
+.p-tabview-nav li:hover .p-tabview-nav-link {
+	@apply border-Blue1 !important;
+}
+
+.p-tabmenu-nav li:hover .p-menuitem-link {
+	@apply border-Blue1 !important;
+}
+
+/* * END generic prime tabmenu */
+
+/* * START generic prime Carousel */
+.p-carousel-indicators .p-carousel-indicator button {
+	width: 0.6rem !important;
+	height: 0.6rem !important;
+	border-radius: 99px !important;
+}
+
+/* * END generic prime Carousel */
+
+/* * START generic prime Dropdown */
+.p-dropdown {
+	@apply rounded-lg !important;
+}
+
+.p-dropdown-label.p-inputtext {
+	@apply text-right;
+}
+
+.p-dropdown-filter {
+	@apply mr-0 pr-2 !important;
+}
+
+.p-dropdown-panel .p-dropdown-filter-icon {
+	right: unset !important;
+	left: 0.5rem;
+}
+
+.p-dropdown .p-dropdown-clear-icon {
+	right: unset !important;
+	left: 2.357rem;
+}
+
+.p-dropdown.p-dropdown-clearable .p-dropdown-label {
+	@apply pr-2;
+}
+
+/* * END generic prime Dropdown */
+
+/* * generic prime MultiSelect  */
+.p-multiselect {
+	@apply rounded-lg  !important;
+}
+
+.p-multiselect-panel .p-checkbox {
+	@apply ml-2 mr-0;
+}
+
+.p-multiselect-filter-icon {
+	@apply right-3 !important;
+}
+
+.p-multiselect-filter-container .p-inputtext {
+	@apply pr-8 !important;
+}
+
+.p-multiselect-close {
+	@apply ml-0 mr-2 !important;
+}
+
+/* * END generic prime MultiSelect  */
+
+/* * Start generic prime Accordion  */
+.p-accordion-toggle-icon {
+	@apply mr-0 ml-2;
+}
+
+.p-accordion-toggle-icon.pi-chevron-right::before {
+	content: '\e900';
+}
+
+.__filters .p-accordion-header {
+	@apply hidden !important;
+}
+
+.__filters .p-accordion-content {
+	@apply border-0 p-0 !important;
+}
+
+/* * END generic prime Accordion  */
+
+/* * START generic prime Split button */
+.p-splitbutton {
+	direction: ltr;
+}
+
+.p-splitbutton-defaultbutton {
+	direction: rtl;
+}
+
+.p-menuitem-icon {
+	@apply mr-0 ml-2 !important;
+}
+
+.p-tieredmenu .p-menuitem-text,
+.p-menuitem-link {
+	@apply whitespace-nowrap text-sm;
+}
+
+/* * END generic prime Split button  */

@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+yarn-error.log
+.husky/_
+coverage
+stats.html
+nginx/*.pem
+nginx/*.cert
+nginx/*.key
+packages/*
